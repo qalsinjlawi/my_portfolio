@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="por.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"\>
+  </head>
+  <body class="white_mode">
+    <section class="hero">
+        <!--start header-->
+      <header>
+        <nav>
+          <a href="#" class="logo"><span class="q">Q</span><span class="al">alsinjlawi</span></a>
+          <ul class="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sirvices</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Highlight</a></li>
+          </ul>
+          
+          <span ><i class="fa-solid fa-sun btn-mode"></i></span>
+        </nav>
+      </header>
+      <!--end header-->
+
+      <!--start content-->
+      <div class="content">
+        <div class="div-text">
+          <h4>Hello, I'm</h4>
+          <h1>Qutaiba AL-Sinjlawi</h1>
+          <span>Full-Stack Web Developer</span>
+          <p>
+            I'm a Full-Stack web developer, specializing in building innovative and user-friendly websites that combine aesthetic design and high performance to ensure an exceptional user experience.
+          </p>
+          <a href="#" class="btn">Download CV</a>
+
+        </div>
+        <div class="div-img">
+          <img src="images/my_photo.png" alt="My personal photo" />
+           
+          <div class="social_icons">
+
+            <a href="https://github.com/qalsinjlawi" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+
+            <a  href="https://www.linkedin.com/in/qutaiba-al-sinjlawi-473130204/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+
+          </div>
+        
+      </div>
+      <!--end hero_content-->
+    </section>
+
+     
+    <script>
+        const btnMode = document.querySelector(".btn-mode");
+  
+        btnMode.onclick = function () {
+          document.body.classList.toggle("white_mode");
+  
+          if (document.body.classList.contains("white_mode")) {
+            btnMode.classList.remove("fa-moon");
+            btnMode.classList.add("fa-sun");
+          } else {
+            btnMode.classList.remove("fa-sun");
+            btnMode.classList.add("fa-moon");
+          }
+        };
+      </script>
 </body>
 </html>
