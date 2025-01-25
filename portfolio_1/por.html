@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="por.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"\>
   </head>
-  <body class="white_mode">
+  <body class="white_mode" id="home">
     <section class="hero">
         <!--start header-->
       <header>
         <nav>
           <a href="#" class="logo"><span class="q">Q</span><span class="al">alsinjlawi</span></a>
           <ul class="nav_links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Sirvices</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Sirvices</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Testimonials</a></li>
             <li><a href="#">Highlight</a></li>
@@ -33,11 +33,9 @@
         <div class="div-text">
           <h4>Hello, I'm</h4>
           <h1>Qutaiba AL-Sinjlawi</h1>
-          <span>Full-Stack Web Developer</span>
-          <p>
-            I'm a Full-Stack web developer, specializing in building innovative and user-friendly websites that combine aesthetic design and high performance to ensure an exceptional user experience.
-          </p>
-          <a href="#" class="btn">Download CV</a>
+          <span class="element-text">Full-Stack Web Developer</span>
+         <br />
+          <a href="https://drive.google.com/file/d/19FzqTS1lSMusWldjVDE4MDRjHWaNbUDK/view?usp=drive_link" target="_blank" class="btn">Download CV</a>
 
         </div>
         <div class="div-img">
@@ -49,15 +47,115 @@
 
             <a  href="https://www.linkedin.com/in/qutaiba-al-sinjlawi-473130204/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 
-            <a href="" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
+            <a href="mailto:qalsinjlawi@gmail.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a>
 
           </div>
         
       </div>
       <!--end hero_content-->
+
     </section>
 
-     
+
+    <main>
+      <!--start about me section-->
+      <section id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <hr>
+
+          <div class="about-content">
+
+            <div class="column-1">
+
+             <h3>I'm<span class="praimary-text"> Qutaiba AL-Sinjlawi ,</span> a web developer </h3>
+             </div>
+             <br>
+               <p>
+                I am a passionate, dedicated, and creative web developer with a proven track record of creating high-quality, user-friendly websites. My expertise lies in developing elegant, responsive designs, efficient back-end systems, and engaging user experiences. I am always eager to learn and adapt to new technologies and improve my skills.
+               </p>
+               
+            <div class="column-2">
+              <p><b>Age :</b>23</p>
+              <p><b>Address:</b> Amman,Jordan</p>
+              <p><b>Email:</b> qalsinjlawi@gmail.com</p>
+              <p><b>Phone:</b> +962790547830</p> 
+
+            </div>   
+          </div>
+
+        </div>
+    </section>
+
+    </main>
+     <!--end about me section-->
+    
+     <!--start skills section-->
+     <section id="skills">
+      <div class="container">
+        <h2><i class="fa-solid fa-laptop-code"> Skills &amp;<span class="praimary-text"> Abilities</span></i></h2>
+        <hr>
+
+        <div class="skills-content">
+          <div class="row">
+            <div class="item">
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML</p>
+            </div>
+
+            <div class="item">
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS</p>
+            </div>
+
+            <div class="item">
+              <i class="fa-brands fa-square-js"></i>              <p>JavaScript</p>
+            </div>
+
+            <div class="item">
+              <i class="fa-brands fa-square-github"></i>              <p>Github</p>
+            </div>
+          </div>
+          </div>
+        <!--end skills section-->
+
+        <!--start services section-->
+        <div class="cards" id="services"></div>
+        <h2 class="taitle">Services</h2>
+        <div class="content">
+          <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-code"></i> 
+
+                <div class="info">
+                  <h3>Web Development</h3>
+                  <p>Creating a website is a complex task, but our team is here to help you create a stunning and functional website that will help you reach your audience and grow your business.</p>
+                  </div>
+                  <i class="fa-solid fa-wand-magic-sparkles"></i> 
+
+                <div class="info">
+                  <h3>Responsive Design</h3>
+                  <p>Creating a responsive design is a crucial aspect of web development, as it ensures that your website looks and functions optimally on different devices and screen sizes.</p>
+                </div>
+                <i class="fa-solid fa-object-ungroup"></i>
+
+                <div class="info">
+                  <h3>Creative Design</h3>
+                  <p>We help you brainstorm and develop your ideas for your website.</p>
+                </div>
+              </div>
+
+          </div>
+
+        </div>
+        <!--end services section-->
+               </div>     
+
+
+        </div>
+
+      </div>
+     <!--start mode button-->
     <script>
         const btnMode = document.querySelector(".btn-mode");
   
@@ -73,5 +171,6 @@
           }
         };
       </script>
+      <!--end mode button-->
 </body>
 </html>
