@@ -21,6 +21,7 @@
   background-color: var(--bgcolor);
   height: 100vh;
   overflow: hidden;
+  
 }
 
 .hero header nav {
@@ -69,6 +70,7 @@
 }
 
 .hero .content {
+  
   width: 90%;
   margin: auto;
   display: flex;
@@ -168,7 +170,7 @@
 #about ,
 #services ,
 #skills{
-    padding: 100px 0;
+    padding: 50px ;
 }
 
 #about h2{
@@ -296,23 +298,21 @@ border-radius: 8px;
     color: #23a3fe;
     font-size: 20px; 
     font-weight: 800;
+    width: 100%;
     margin-bottom: 30px;
 }
 
-.content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
+
 .card {
     background-color: #fff;
-    width: 21.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
     transition: 0.3s ease;
+    
+ 
 }
 
 .card:hover{
@@ -321,13 +321,17 @@ border-radius: 8px;
 }
 
 .icon {
+  display: flex;
+  justify-content: space-between;
     color: #23a3fe;
     text-align: center;
 }
 .icon i{
     font-size: 8em;
 }
-
+.info{
+  width: 250px;
+}
 .info h3{
     color: #23a3fe;
     font-size: 18px;
